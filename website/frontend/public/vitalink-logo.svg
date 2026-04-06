@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="vitaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="50%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle with gradient -->
+  <circle cx="50" cy="50" r="45" fill="url(#vitaGrad)" />
+  
+  <!-- Inner glow ring -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+  
+  <!-- Heartbeat/Pulse Line -->
+  <polyline 
+    points="15,50 30,50 35,50 40,35 45,65 50,40 55,55 60,50 70,50 85,50" 
+    fill="none" 
+    stroke="url(#pulseGrad)" 
+    stroke-width="4" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+  
+  <!-- Link circles (connectivity symbol) -->
+  <circle cx="20" cy="50" r="6" fill="none" stroke="white" stroke-width="2.5" stroke-opacity="0.9"/>
+  <circle cx="80" cy="50" r="6" fill="none" stroke="white" stroke-width="2.5" stroke-opacity="0.9"/>
+  
+  <!-- Small connection dots -->
+  <circle cx="20" cy="50" r="2" fill="white"/>
+  <circle cx="80" cy="50" r="2" fill="white"/>
+</svg>
